@@ -51,7 +51,7 @@ function getRss(newRss) {
         success: function(data) {
             console.log(data);
             if (data.responseData) {
-                $(".table tbody").append("<tr>" + "<td>" + "<a" + data.responseData.feed.title + "</td>" + "<td class='rss-link'>" + data.responseData.feed.feedUrl + "</td>" + "<td><a href='#' class='use-link'>USE</a></td>" + "<td><span class='glyphicon glyphicon-remove'></span></td>" + "<td> <span class='glyphicon glyphicon-pencil'></span></td>" + "<td><span class='glyphicon glyphicon-stats'></span></td>" + "</tr>");
+                $(".table tbody").append("<tr>" + "<td>" + data.responseData.feed.title + "</td>" + "<td class='rss-link'>" + data.responseData.feed.feedUrl + "</td>" + "<td><a href='#' class='use-link'>USE</a></td>" + "<td><span class='glyphicon glyphicon-remove'></span></td>" + "<td> <span class='glyphicon glyphicon-pencil'></span></td>" + "<td><span class='glyphicon glyphicon-stats'></span></td>" + "</tr>");
                 $(".input-link").val(null );
                 $(".enter-link").hide("slow");
             } 
