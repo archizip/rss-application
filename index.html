@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>rss test</title>
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="main.css">
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="bower_components/jquery.easy-pie-chart/dist/jquery.easypiechart.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="col-lg-12">
+				<h2>RSS LIST</h2>
+				<table class="table" id="onTable">
+					<thead>
+						<tr>
+							<th>titel</th>
+							<th>url</th>
+							<th>show msg</th>
+							<th>delete</th>
+							<th>change</th>
+							<th>stats</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Art</td>
+							<td class="rss-link">http://k.img.com.ua/rss/ru/technews.xml</td>
+							<td><a href="#" class="use-link">USE</a></td>
+							<td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+							<td><span class="glyphicon glyphicon-pencil"></span></td>
+							<td><span class="glyphicon glyphicon-stats"></span></td>
+						</tr>
+						<tr>
+							<td>Business</td>
+							<td class="rss-link">http://feeds.reuters.com/reuters/businessNews</td>
+							<td><a href="#" class="use-link">USE</a></td>
+							<td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+							<td><span class="glyphicon glyphicon-pencil"></span></td>
+							<td><span class="glyphicon glyphicon-stats"></span></td>
+						</tr>
+						<tr>
+							<td>Top News</td>
+							<td class="rss-link">http://feeds.reuters.com/reuters/topNews</td>
+							<td><a href="#" class="use-link">USE</a></td>
+							<td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+							<td><span class="glyphicon glyphicon-pencil"></span></td>
+							<td><span class="glyphicon glyphicon-stats"></span></td>
+						</tr>
+					</tbody>
+				</table>
+				<button type="button" class="btn btn-primary" id="add">
+				ADD NEW RSS
+				<span class="glyphicon glyphicon-chevron-down"></span>
+				</button>
+				<div class="enter-link">
+					<div class="input-group col-lg-3">
+						<span class="input-group-addon" id="sizing-addon1">http://</span>
+						<input type="text" class="form-control input-link" placeholder="Enter new RSS">
+					</div>
+					<button class="btn btn-default new-link col-lg-3">
+					<span class="glyphicon glyphicon-ok"></span>
+					</button>
+				</div>
+			</div>
+			<div class="col-lg-12">
+				<div class="col-lg-5 message">
+					<h2>RSS MESSAGE LIST</h2>
+					<span>Click on use link to get message</span>
+					<ul id="feed" class="list-unstyled">
+					</ul>
+				</div>
+				<div class="col-lg-5 message-stats">
+					<h2>MESSAGE STATS</h2>
+					<span>Click on message text to get stats</span>
+					<div>
+						<span class="chart" data-percent="0">
+							<span class="percent">0</span>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+	$(function() {
+	$('.chart').easyPieChart({
+		});
+	});
+	</script>
+	<script src="js/main.js"></script>
+</html>

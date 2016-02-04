@@ -1,0 +1,89 @@
+body{
+	font-size: 14px;
+	color: #000000;
+	background:#ddd;
+}
+.table{
+	background: #fff;
+}
+.table thead>tr>th {
+	border: 1px solid #000;
+	text-transform: uppercase;
+}
+.table tbody,th,tr,td {
+	border: 1px solid #000;
+}
+.table span.glyphicon:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+.enter-link{
+	display: none;
+}
+#feed{
+	max-width: 500px;
+    background: #fff;
+    border-radius: 5px;
+    max-height: 240px;
+    min-height: 240px;
+    overflow: auto;
+}
+#feed > li{
+	padding: 5px;
+	border-bottom: 1px solid #ddd;
+}
+#feed > li > span.title >a{
+	color:#000;
+	cursor: pointer;
+}
+#feed > li > span:first-child{
+	font-size: 12px;
+	font-style: italic;
+}
+.stats-info > span{
+	display: block;
+}
+.percent {
+    line-height: 110px;
+    z-index: 2;
+    position: absolute;
+    width: 110px;
+}
+.percent:after {
+    content: '%';
+    margin-left: 0.1em;
+    font-size: .8em;
+}
+.chart{
+	position: relative;
+    display: block;
+    width: 110px;
+    height: 110px;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 50px;
+}
+.message > span{
+	font-size: 15px;
+	font-style: italic;
+	text-decoration: underline;
+	display: block;
+	padding: 10px;
+}
+.message-stats > div{
+	text-align: center;
+	background: #fff;
+	min-height: 240px;
+	border-radius: 5px;
+	padding: 1px;
+}
+.message-stats > h2{
+	text-align: center;
+}
+.message-stats > span{
+	font-size: 15px;
+	font-style: italic;
+	text-decoration: underline;
+	display: block;
+	padding: 10px;
+}

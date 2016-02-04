@@ -1,0 +1,17 @@
+{
+  "name": "rss test",
+  "description": "test task",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "rss"
+  ],
+  "authors": [
+    "yudkin yurii"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "jquery.easy-pie-chart": "~2.1.6"
+  }
+}
