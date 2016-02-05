@@ -150,9 +150,9 @@ function Edit(par) {
     var tdUse = par.children("td:nth-child(3)");
     var tdDelete = par.children("td:nth-child(4)");
     var tdChange = par.children("td:nth-child(5)");
-    title.html("<input type='text' id='txtName' value='" + title.html() + "'/>");
-    url.html("<input type='text' id='txtPhone' value='" + url.html() + "'/>");
-    tdUse.html("<input type='text' id='txtEmail' value='" + tdUse.html() + "'/>");
+    title.html("<input type='text' value='" + title.html() + "'/>");
+    url.html("<input type='text' value='" + url.html() + "'/>");
+    tdUse.html("<input type='text' value='" + tdUse.html() + "'/>");
     tdDelete.html("<span class='glyphicon glyphicon-remove'></span>");
     tdChange.html("<span class='glyphicon glyphicon-download-alt'></span>");
 
